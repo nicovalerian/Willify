@@ -4,7 +4,6 @@ Willify is a Spotify-clone website built with vanilla (pure) HTML, CSS, and Java
 # 📝 To-Do List 
 
 - [ ] 🎨 Design website prototype in Figma
-  - [ ] Ensure design is different from final website
   - [ ] Include header, navigation, content, and footer in design
   - [ ] Consider color, layout, and consistency
 
