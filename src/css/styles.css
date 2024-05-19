@@ -8,56 +8,162 @@
 
 @font-face {
     font-family: 'CircularStd';
-    src: url('fonts/CircularStd-Black.otf') format('opentype');
+    src: url('../../fonts/CircularStd-Black.otf') format('opentype');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CircularStd';
-    src: url('fonts/CircularStd-BlackItalic.otf') format('opentype');
+    src: url('../../fonts/CircularStd-BlackItalic.otf') format('opentype');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'CircularStd';
-    src: url('fonts/CircularStd-Bold.otf') format('opentype');
+    src: url('../../fonts/CircularStd-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CircularStd';
-    src: url('fonts/CircularStd-BoldItalic.otf') format('opentype');
+    src: url('../../fonts/CircularStd-BoldItalic.otf') format('opentype');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'CircularStd';
-    src: url('fonts/CircularStd-Book.otf') format('opentype');
+    src: url('../../fonts/CircularStd-Book.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CircularStd';
-    src: url('fonts/CircularStd-BookItalic.otf') format('opentype');
+    src: url('../../fonts/CircularStd-BookItalic.otf') format('opentype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'CircularStd';
-    src: url('fonts/CircularStd-Medium.otf') format('opentype');
+    src: url('../../fonts/CircularStd-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CircularStd';
-    src: url('fonts/CircularStd-MediumItalic.otf') format('opentype');
+    src: url('../../fonts/CircularStd-MediumItalic.otf') format('opentype');
     font-weight: 500;
     font-style: italic;
+}
+
+:root {
+    --dark-green: #151A27;
+    --light-green: #37C25E;
+}
+
+body {
+    font-family: 'CircularStd', sans-serif;
+}
+
+button {
+    font-family: 'CircularStd', sans-serif;
+    font-size: 1rem;
+}
+
+.header {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 5rem;
+    height: 4.5rem;
+    background-color: var(--dark-green);
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.logo-wrapper img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.logo-wrapper .logo-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: var(--light-green);
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.auth-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.75rem;
+    width: 8.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.auth-buttons button.login-btn {
+    background-color: var(--light-green);
+    color: white;
+}
+
+.auth-buttons button.register-btn {
+    background-color: transparent;
+    border: var(--light-green) 1px solid;
+    color: var(--light-green);
+}
+
+.auth-buttons button:hover {
+    transform: scale(1.025);
 }
