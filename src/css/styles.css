@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font: inherit;
 }
 
 @font-face {
@@ -69,11 +70,12 @@
 
 body {
     font-family: 'CircularStd', sans-serif;
+    min-height: 100vh;
 }
 
-button {
-    font-family: 'CircularStd', sans-serif;
-    font-size: 1rem;
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
 }
 
 .header {
@@ -153,12 +155,12 @@ button {
     font-weight: 500;
 }
 
-.auth-buttons button.login-btn {
+button.login-btn {
     background-color: var(--light-green);
     color: white;
 }
 
-.auth-buttons button.register-btn {
+button.register-btn {
     background-color: transparent;
     border: var(--light-green) 1px solid;
     color: var(--light-green);
