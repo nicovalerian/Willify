@@ -65,6 +65,7 @@
 
 :root {
     --dark-green: #151A27;
+    --mid-green: #081F0F;
     --light-green: #37C25E;
 }
 
@@ -104,12 +105,14 @@ video {
     background-color: var(--dark-green);
     position: fixed;
     overflow: hidden;
+    z-index: 1000;
 }
 
 .logo-wrapper {
     display: flex;
     align-items: center;
     gap: 0.625rem;
+    min-width: 20rem;
 }
 
 .logo-wrapper img {
@@ -126,8 +129,11 @@ video {
 
 .nav-links {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
     list-style: none;
+    min-width: 20rem;
 }
 
 .nav-links li a {
@@ -144,8 +150,10 @@ video {
 
 .auth-buttons {
     display: flex;
+    justify-content: flex-end;
     align-items: flex-end;
     gap: 1rem;
+    min-width: 20rem;
 }
 
 .auth-buttons button {
@@ -254,8 +262,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 150vh;
-    background: linear-gradient(0deg, rgba(55, 194, 94, 1) 0%, rgba(39, 116, 68, 1) 40%, rgba(21, 26, 39, 1) 90%);
+    background: var(--mid-green);
 }
 
 .hero {
@@ -372,6 +379,126 @@ main {
     font-size: 1.25rem;
 }
 
+.charts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    padding: 3rem 8rem;
+}
 
+.charts-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
-/* https://dribbble.com/shots/21015641-Investment-Platform-Landing-Page */
+.charts-header h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.charts-header a {
+    color: #ADADAD;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    transition: 0.25s;
+}
+
+.charts-header a:hover {
+    color: white;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: min(2rem, 5%);
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 14rem;
+    height: 20.25rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-green);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.card:hover .play-button {
+    display: flex;
+}
+
+.card:hover .play-button:hover {
+    transform: scale(1.048);
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.card img {
+    width: 12rem;
+    border-radius: 0.25rem;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.25rem;
+}
+
+.card-text h3, .card-text p {
+    overflow: hidden;
+}
+
+.card-text h3 {
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+}
+
+.card-text p {
+    width: 100%;
+    color: #B3B3B3;
+    font-size: 1rem;
+    font-weight: normal;
+}
