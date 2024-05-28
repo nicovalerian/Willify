@@ -586,6 +586,11 @@ main {
 .table-row:hover {
     background-color: rgba(255, 255, 255, 0.04);
     border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.table-row:hover .cell:nth-child(1) {
+    color: white;
 }
 
 .table-row-header {
@@ -614,7 +619,7 @@ main {
 }
 
 .table-row > .cell:nth-child(1), .table-row-header > .cell:nth-child(1) {
-    flex: 0.2;
+    flex: 0.3;
 }
 
 .table-row > .cell:nth-child(2), .table-row-header > .cell:nth-child(2) {
