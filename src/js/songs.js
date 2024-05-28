@@ -53,23 +53,27 @@ function populateTable() {
     });
 
     const tableRows = document.querySelectorAll('.table-row');
-    tableRows.forEach(row => {
-        const songNumberCell = row.querySelector(`#song-number-${row.id.split('-')[1]}`);
-        const originalContent = songNumberCell.textContent;
+    if (tableRows) {
+        tableRows.forEach(row => {
+            const songNumberCell = row.querySelector(`#song-number-${row.id.split('-')[1]}`);
+            const originalContent = songNumberCell.textContent;
 
-        row.addEventListener('mouseover', () => {
-            songNumberCell.textContent = "▶";
-        });
+            row.addEventListener('mouseover', () => {
+                songNumberCell.textContent = "▶";
+            });
 
-        row.addEventListener('mouseout', () => {
-            songNumberCell.textContent = originalContent;
-        });
+            row.addEventListener('mouseout', () => {
+                songNumberCell.textContent = originalContent;
+            });
 
-        row.addEventListener('click', () => {
-            const songId = row.id.split('-')[1];
-            window.location.href = `/songDetail.html?id=${songId}`;
+            row.addEventListener('click', () => {
+                const songId = row.id.split('-')[1];
+                window.location.href = `/songDetail.html?id=${songId}`;
+            });
         });
-    });
+    } else {
+        console.log('No table rows found!');
+    }
 }
 
 document.addEventListener('DOMContentLoaded', populateTable);
