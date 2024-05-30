@@ -257,6 +257,10 @@ button.register-btn {
     font-weight: 300;
 }
 
+.dropdown-btn {
+    display: none;
+}
+
 main {
     display: flex;
     flex-direction: column;
