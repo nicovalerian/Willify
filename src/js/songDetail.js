@@ -19,7 +19,8 @@ const songAlbum = document.querySelector('.album-subtitle');
 const songDuration = document.querySelector('.song-duration');
 const songLyrics = document.querySelector('.lyrics-text');
 
-const songLyricsBr = song.lyrics.split('\n').join('<br>');
+// Ganti newline (\n) jadi <br> pada lyrics
+const songLyricsBr = song.lyrics.split('\n').join('<br>').slice(5);
 
 if (song) {
     albumCover.src = song.albumCoverPath;
@@ -28,4 +29,6 @@ if (song) {
     songAlbum.textContent = song.album;
     songDuration.textContent = song.duration;
     songLyrics.innerHTML = songLyricsBr;
+} else {
+    console.log('No song found!');
 }
