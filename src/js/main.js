@@ -1,4 +1,4 @@
-import { songs } from './songs.js';
+import { songs } from './songs.js'; // Import array songs dari databasee
 
 // Tambah event listener ke setiap card
 const songCards = document.querySelectorAll('.card');
@@ -15,17 +15,22 @@ const dropdownMenu = document.querySelector('.dropdown-btn');
 
 if (dropdownMenu) {
     dropdownMenu.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('display-none');
         const background = document.querySelector('.mega-menu');
         
         if (background) {
             background.classList.toggle('mega-menu-active');
             const otherContent = document.querySelector('.content');
-            otherContent.classList.toggle('display-none');
+
+            setTimeout(() => {
+                otherContent.classList.add('display-none');
+            }, 300);
 
             const exitButton = document.querySelector('.exit-btn');
             exitButton.addEventListener('click', () => {
                 background.classList.remove('mega-menu-active');
                 otherContent.classList.remove('display-none');
+                dropdownMenu.classList.remove('display-none');
             });
         }
     });
