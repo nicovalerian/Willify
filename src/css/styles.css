@@ -1125,6 +1125,46 @@ main {
     .auth-buttons button:active {
         transform: scale(1);
     }
+
+    
+    .content {
+        min-height: 100vh;
+    }
+
+    main {
+        min-height: 100vh;
+    }
+
+    .song-detail {
+        margin-top: 2rem;
+        height: 100%;
+        width: 80vw;
+    }
+
+    .album-cover-img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 1rem;
+    }
+
+    .left-detail-card {
+        gap: 1rem;
+    }
+
+    .detail-card {
+        min-height: 60rem;
+        max-width: 80vw;
+        min-width: 100%;
+    }
+
+    .left-right-detail {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .song-lyrics {
+        height: 15rem;
+    }
 }
 
 @media (max-width: 768px) and (min-width: 601px) { /* Tablet */
@@ -1431,5 +1471,38 @@ main {
     
     .auth-buttons button:active {
         transform: scale(1);
+    }
+
+    .content {
+        min-height: 100vh;
+    }
+
+    main {
+        min-height: 100vh;
+    }
+
+    .song-detail {
+        margin-top: 2rem;
+        height: 100%;
+        width: 80vw;
+    }
+
+    .detail-card {
+        min-height: 60rem;
+        max-width: 80vw;
+        min-width: 100%;
+    }
+
+    .left-right-detail {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .left-detail-card {
+        flex-direction: row;
+    }
+
+    .song-lyrics {
+        height: 20rem;
     }
 }
