@@ -1259,10 +1259,6 @@ main {
         width: 90%;
     }
 
-    .table-container * {
-        font-size: 0.8rem !important;
-    }
-
     .table-row {
         gap: 10px;
     }
