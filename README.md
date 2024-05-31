@@ -7,22 +7,22 @@ Willify is a Spotify-clone website built with vanilla (pure) HTML, CSS, and Java
   - [✔] Include header, navigation, content, and footer in design
   - [✔] Consider color, layout, and consistency
 
-- [ ] 🛠️ Build responsive website
+- [✔] 🛠️ Build responsive website
   - [✔] Use 5 kinds of CSS property and JavaScript
-  - [ ] Use meta viewport tag and media screen rule for screens below 768px width
+  - [✔] Use meta viewport tag and media screen rule for screens below 768px width
 
 - [ ] 📄 Create five main pages: Home, Register, Songs, About Us, Song Detail
   - [✔] Home Page: Display best seller and recommendation songs, brief info about Willify
-  - [ ] Songs Page: List of songs with name, description, and image
+  - [✔] Songs Page: List of songs with name, description, and image
   - [ ] Register Page: Registration form with name, email, password, age, gender fields
   - [ ] About Us Page: Information about Willify's history and founders
   - [ ] Song Detail Page: Details of a song including name, description, and lyrics
 
-- [ ] 📏 Follow design guidelines
+- [✔] 📏 Follow design guidelines
   - [✔] Observe principles of human and computer interaction
   - [✔] Use only external CSS
   - [✔] Use CSS box positioning for layout
-  - [ ] Make website responsive for desktops, tablets, and mobile devices
+  - [✔] Make website responsive for desktops, tablets, and mobile devices
   - [✔] Use vanilla HTML, CSS, and JavaScript (no frameworks)
   - [✔] Organize files with subdirectories
   - [✔] Include references used in creating the website
