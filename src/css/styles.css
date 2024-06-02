@@ -994,6 +994,15 @@ main {
     gap: 0.5rem;
 }
 
+.checkbox-group .t-n-c {
+    color: var(--light-green);
+    cursor: pointer;
+}
+
+.checkbox-group .t-n-c:hover {
+    text-decoration: underline;
+}
+
 .checkbox-group input[type='checkbox'] {
     width: 1rem;
     height: 1rem;
