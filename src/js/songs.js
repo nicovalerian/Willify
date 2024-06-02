@@ -44,7 +44,7 @@ function populateTable() { // Menambahkan baris tabel ke dalam tableContainer
 
             row.addEventListener('click', () => {
                 const songId = row.id.split('-')[1];
-                window.location.href = `/songDetail.html?id=${songId}`;
+                window.location.href = `songDetail.html?id=${songId}`;
             });
         });
     } else {

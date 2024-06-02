@@ -1,9 +1,9 @@
 import { songs } from './database.js'; // Import array songs dari databasee
 
-// Tombol balik ke songs page
+// Tombol balik ke page sebelumnya
 const backButton = document.querySelector('.back-arrow-btn');
 backButton.addEventListener('click', () => {    
-    window.location.href = '/songs.html';
+    window.history.go(-1);
 });
 
 // Ambil query parameter id dari URL
