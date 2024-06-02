@@ -14,9 +14,9 @@ Willify is a Spotify-clone website built with vanilla (pure) HTML, CSS, and Java
 - [ ] 📄 Create five main pages: Home, Register, Songs, About Us, Song Detail
   - [✔] Home Page: Display best seller and recommendation songs, brief info about Willify
   - [✔] Songs Page: List of songs with name, description, and image
-  - [ ] Register Page: Registration form with name, email, password, age, gender fields
+  - [✔] Register Page: Registration form with name, email, password, age, gender fields
   - [ ] About Us Page: Information about Willify's history and founders
-  - [ ] Song Detail Page: Details of a song including name, description, and lyrics
+  - [✔] Song Detail Page: Details of a song including name, description, and lyrics
 
 - [✔] 📏 Follow design guidelines
   - [✔] Observe principles of human and computer interaction
