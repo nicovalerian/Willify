@@ -35,3 +35,15 @@ if (dropdownMenu) {
         }
     });
 }
+
+// Register button event listener
+const registerButtons = [document.querySelectorAll('.register-btn'), document.querySelectorAll('.login-btn'), document.querySelectorAll('.start-button')];
+if (registerButtons) {
+    registerButtons.forEach(buttons => {
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                window.location.href = 'register.html';
+            });
+        })
+    });
+}
