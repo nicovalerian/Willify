@@ -931,6 +931,7 @@ main {
     border-radius: 0 2rem 2rem 0;
     gap: 1rem;
     padding: 2rem;
+    transition: 1s;
 }
 
 .right-register h2 {
@@ -1434,6 +1435,28 @@ main {
     .song-lyrics {
         height: 15rem;
     }
+
+    .register-wrapper {
+        height: 100%;
+    }
+
+    .register-card {
+        width: 100%;
+        flex-direction: column;
+        min-height: 5rem;
+    }
+
+    .left-register {
+        width: 100%;
+        border-radius: 2rem 2rem 0 0;
+        height: 30%;
+    }
+
+    .right-register {
+        width: 100%;
+        border-radius: 0 0 2rem 2rem;
+        height: 80%;
+    }
 }
 
 @media (max-width: 768px) and (min-width: 601px) { /* Tablet */
@@ -1769,5 +1792,22 @@ main {
 
     .song-lyrics {
         height: 20rem;
+    }
+
+    .register-card {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .left-register {
+        width: 100%;
+        border-radius: 2rem 2rem 0 0;
+        height: 30%;
+    }
+
+    .right-register {
+        width: 100%;
+        border-radius: 0 0 2rem 2rem;
+        height: 80%;
     }
 }

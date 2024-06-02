@@ -232,7 +232,7 @@ registerForm.addEventListener('submit', (e) => {
         const successMessage = document.createElement('h1');
         const successSubMessage = document.createElement('p');
         successMessage.innerText = 'Registration successful!';
-        successSubMessage.innerText = 'Redirecting to the page before...';
+        successSubMessage.innerText = 'Redirecting back...';
         leftRegister.appendChild(successMessage);
         leftRegister.appendChild(successSubMessage);
 
