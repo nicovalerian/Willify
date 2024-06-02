@@ -859,7 +859,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 60%;
-    height: 35rem;
+    min-height: 35rem;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 2rem;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -876,6 +876,11 @@ main {
     border-radius: 2rem 0 0 2rem;
     gap: 1rem;
     padding: 2rem;
+    transition: 1s;
+}
+
+.left-register-success {
+    background-color: var(--light-green);
 }
 
 .left-register h1 {
@@ -1080,6 +1085,21 @@ main {
 
 .form-wrapper button[type='submit']:active {
     transform: scale(1);
+}
+
+.invalid-msg {
+    color: red;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+.invalid-msg:focus-within {
+    color: red;
+}
+
+.invalid-input {
+    border: 1px solid red !important;
 }
 
 @media (max-width: 600px) { /* Mobile */
