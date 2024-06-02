@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willify - Register</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script type="module" src="src/js/main.js" defer></script>
+    <script type="module" src="src/js/register.js" defer></script>
+</head>
+
+<body>
+    <section class="mega-menu"> <!-- Not desktop navbar, mobile/tablet navbar -->
+        <div class="mega-menu-content">
+            <div class="mega-menu-right">
+                <button class="exit-btn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+            </div>
+            <ul class="mega-menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="mega-auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="register-btn">Register</button>
+            </div>
+        </div>
+    </section>
+    
+    <div class="content">
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo-wrapper">
+                    <img src="src/images/logo.png" alt="Willify Logo">
+                    <a class="logo-text" href="index.html">Willify</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="songs.html">Songs</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="login-btn">Login</button>
+                    <button class="register-btn">Register</button>
+                </div>
+                <div class="dropdown-btn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="register-wrapper layered-waves-bg l-w-bg">
+                <div class="register-card">
+                    <div class="left-register">
+                        <h1>Have an account?</h1>
+                        <p>Sign in to get back to your music.</p>
+                        <button class="login-btn">Sign In</button>
+                    </div>
+                    <div class="right-register">
+                        <div>
+                            <h1>Hi there!</h1>
+                            <h2>Let's explore your muse by creating an account.</h2>
+                        </div>
+                        <form class="form-wrapper">
+                            <div class="register-form">
+                                <div class="personal-info">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="age">Age</label>
+                                        <input type="text" id="age" name="age" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="gender">Gender</label>
+                                        <select id="gender" name="gender" required>
+                                            <option value=""></option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>    
+
+                                <div class="password-inputs">
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" name="password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirm-password">Confirm Password</label>
+                                        <input type="password" id="confirm-password" name="confirm-password" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms" class="terms-label">I agree to the terms and conditions</label>
+                            </div>
+                            <button type="submit">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="left-footer">
+                    <img src="src/images/logo.png" alt="Willify Logo">
+                    <div>
+                        <h1>Willify</h1>
+                        <p>Seamless and enjoyable music.</p>
+                    </div>
+                </div>
+                <div class="right-footer">
+                    <nav class="footer-nav">
+                        <a href="#">About Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </nav>
+                    
+                    <p>&copy; 2024 Willify. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

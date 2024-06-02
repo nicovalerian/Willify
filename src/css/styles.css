@@ -833,6 +833,246 @@ main {
     line-height: 1.5;
 }
 
+.layered-waves-bg {
+    aspect-ratio: 1920 / 600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.l-w-bg {
+    background-image: url('../../src/images/svg/layered-waves-1.svg');
+}
+
+.register-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 11.5rem);
+}
+
+.register-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 35rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.left-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    border-radius: 2rem 0 0 2rem;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.left-register h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark-green);
+}
+
+.left-register p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--dark-green);
+}
+
+.left-register button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--light-green);
+    border-radius: 1.25rem;
+    width: 10.625rem;
+    height: 3.75rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: 0.1s;
+    background-color: transparent;
+    color: var(--light-green);
+}
+
+.left-register button:hover {
+    transform: scale(1.025);
+    background-color: var(--light-green);
+    color: white;
+}
+
+.left-register button:active {
+    transform: scale(1);
+}
+
+.right-register {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    border-radius: 0 2rem 2rem 0;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.right-register h2 {
+    color: white;
+}
+
+.right-register label {
+    color: #ADADAD;
+}
+
+.right-register h1 {
+    color: var(--light-green);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.right-register h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.register-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+.password-inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+.form-group label {
+    color: #ADADAD;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-group input[type='checkbox'] {
+    width: 1rem;
+    height: 1rem;
+}
+
+.checkbox-group label {
+    color: white;
+}
+
+.form-group:focus-within label {
+    color: white;
+}
+
+.register-form input[type='text'], .register-form input[type='email'], .register-form input[type='password'] {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ADADAD;
+    border-radius: 0.25rem;
+    color: #ADADAD !important;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: transparent !important;
+}
+
+.register-form input[type='text']:focus-visible, .register-form input[type='email']:focus-visible, .register-form input[type='password']:focus-visible {
+    color: white !important;
+    outline: none;
+    border: 1px solid white !important;
+}
+
+.register-form select[name='gender'] {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ADADAD;
+    border-radius: 0.25rem;
+    color: #ADADAD !important;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: transparent !important;
+}
+
+.register-form select[name='gender'] option {
+    color: black;
+}
+
+.register-form select[name='gender']:focus-visible {
+    color: white !important;
+    outline: none;
+    border: 1px solid white !important;
+}
+
+.form-wrapper button[type='submit'] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 1.125rem;
+    width: 100%;
+    height: 3.75rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: 0.2s;
+    background-color: var(--light-green);
+    color: white;
+}
+
+.form-wrapper button[type='submit']:hover {
+    color: var(--light-green);
+    background-color: white;
+    transform: scale(1.025);
+}
+
+.form-wrapper button[type='submit']:active {
+    transform: scale(1);
+}
+
 @media (max-width: 600px) { /* Mobile */
 
     .dropdown-btn, .exit-btn {

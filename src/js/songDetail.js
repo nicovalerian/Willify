@@ -22,7 +22,7 @@ const songLyrics = document.querySelector('.lyrics-text');
 // Ganti newline (\n) jadi <br> pada lyrics
 const songLyricsBr = song.lyrics.split('\n').join('<br>').slice(5);
 
-if (song) {
+if (song) { 
     albumCover.src = song.albumCoverPath;
     songTitle.textContent = song.title;
     songArtist.textContent = song.artist;
