@@ -1616,6 +1616,42 @@ main {
         border-radius: 0 0 2rem 2rem;
         height: 80%;
     }
+
+    .about-us-card {
+        width: 90%;
+    }
+
+    .top-card, .mid-card, .bottom-card {
+        height: 30rem;
+    }
+
+    .about-team h1, .about-recruit h1 {
+        font-size: 1.25rem;
+    }
+
+    .about-team h2, .about-recruit h2 {
+        font-size: 1rem;
+    }
+
+    .about-team p, .about-recruit p {
+        font-size: 0.8rem;
+    }
+
+    .about-ceo h1 {
+        font-size: 1.25rem;
+    }
+
+    .about-ceo h2 {
+        font-size: 1rem;
+    }
+
+    .about-ceo p {
+        font-size: 0.8rem;
+    }
+
+    .mid-card .about-us-left img {
+       object-position: 30% 50%;
+    }
 }
 
 @media (max-width: 768px) and (min-width: 601px) { /* Tablet */
@@ -1945,10 +1981,6 @@ main {
         gap: 1rem;
     }
 
-    .left-detail-card {
-        flex-direction: row;
-    }
-
     .song-lyrics {
         height: 20rem;
     }
@@ -1968,5 +2000,37 @@ main {
         width: 100%;
         border-radius: 0 0 2rem 2rem;
         height: 80%;
+    }
+
+    .about-us-card {
+        width: 90%;
+    }
+
+    .top-card, .mid-card, .bottom-card {
+        height: 30rem;
+    }
+
+    .about-team h1, .about-recruit h1 {
+        font-size: 2.25rem;
+    }
+
+    .about-team h2, .about-recruit h2 {
+        font-size: 1.75rem;
+    }
+
+    .about-team p, .about-recruit p {
+        font-size: 1.rem;
+    }
+
+    .about-ceo h1 {
+        font-size: 2.25rem;
+    }
+
+    .about-ceo h2 {
+        font-size: 1.75rem;
+    }
+
+    .about-ceo p {
+        font-size: 1rem;
     }
 }
