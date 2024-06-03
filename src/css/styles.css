@@ -1103,6 +1103,165 @@ main {
     border: 1px solid red !important;
 }
 
+.about-us-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    min-height: 75rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin: 4rem 0;
+}
+
+.top-card, .mid-card, .bottom-card {
+    display: flex;
+    flex-direction: row;
+    height: 25rem;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+}
+
+.top-card:hover, .mid-card:hover, .bottom-card:hover {
+    transform: translateY(0.8rem);
+    cursor: pointer;
+}
+
+.top-card {
+    height: 30.5rem;
+    border-radius: 2rem 2rem 0 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.mid-card {
+    height: 30.5rem;
+    margin-top: -2rem;
+    width: 100%;
+    z-index: 2;
+}
+
+.bottom-card {
+    height: 30.5rem;
+    margin-top: -2rem;
+    border-radius: 0 0 2rem 2rem;
+    width: 100%;
+    z-index: 1;
+}
+
+.bottom-card {
+    background-color: white;
+    border-radius: 0 0 2rem 2rem;
+    width: 100%;
+}
+
+.about-us-left, .about-us-right {
+    width: 50%;
+    overflow: hidden;
+}
+
+.about-us-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-card .about-us-left {
+    border-radius: 2rem 0 0 2rem;
+    background-color: white;
+    box-shadow: 0 4px 32px -2px rgba(0, 0, 0, 0.4);
+}
+
+.top-card .about-us-right {
+    border-radius: 0 2rem 2rem 0;
+    box-shadow: 0 4px 32px -2px rgba(0, 0, 0, 0.4);
+}
+
+.about-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.mid-card .about-us-left {
+    border-radius: 0 0 0 2rem;
+    background-color: white;
+    box-shadow: 0 4px 32px -2px rgba(0, 0, 0, 0.4);
+}
+
+.mid-card .about-us-right {
+    border-radius: 0 0 2rem 0;
+    background-color: var(--light-green);
+    box-shadow: 0 4px 32px -2px rgba(0, 0, 0, 0.4);
+}
+
+.bottom-card .about-us-left {
+    border-radius: 0 0 0 2rem;
+}
+
+.bottom-card .about-us-right {
+    border-radius: 0 0 2rem 0;
+}
+
+.about-team, .about-ceo, .about-recruit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.about-team h1, .about-recruit h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--light-green);
+}
+
+.about-team h2, .about-recruit h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--dark-green);
+}
+
+.about-team p, .about-recruit p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--dark-green);
+}
+
+.about-ceo h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--dark-green);
+}
+
+.about-ceo h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.about-ceo p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: white;
+}
+
 @media (max-width: 600px) { /* Mobile */
 
     .dropdown-btn, .exit-btn {
