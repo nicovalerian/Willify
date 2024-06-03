@@ -152,7 +152,7 @@ registerForm.addEventListener('submit', (e) => {
     if (!isNameValid) {
         const invalidMessage = document.createElement('p');
         invalidMessage.classList.add('invalid-msg');
-        invalidMessage.innerText = 'Minimal 3 karakter';
+        invalidMessage.innerText = 'Minimum 3 characters';
         nameFormGroup.appendChild(invalidMessage);
         nameInput.classList.add('invalid-input');
     } else {
@@ -162,7 +162,7 @@ registerForm.addEventListener('submit', (e) => {
     if (!isAgeValid) {
         const invalidMessage = document.createElement('p');
         invalidMessage.classList.add('invalid-msg');
-        invalidMessage.innerText = 'Harus di antara 1-100';
+        invalidMessage.innerText = 'Between 1-100';
         ageFormGroup.appendChild(invalidMessage);
         ageInput.classList.add('invalid-input');
     } else {
@@ -172,7 +172,7 @@ registerForm.addEventListener('submit', (e) => {
     if (!isGenderValid) {
         const invalidMessage = document.createElement('p');
         invalidMessage.classList.add('invalid-msg');
-        invalidMessage.innerText = 'Gender tidak valid';
+        invalidMessage.innerText = 'Gender invalid';
         genderFormGroup.appendChild(invalidMessage);
         genderInput.classList.add('invalid-input');
     } else {
@@ -182,7 +182,7 @@ registerForm.addEventListener('submit', (e) => {
     if (!isEmailValid) {
         const invalidMessage = document.createElement('p');
         invalidMessage.classList.add('invalid-msg');
-        invalidMessage.innerText = 'Email tidak valid';
+        invalidMessage.innerText = 'Email invalid';
         emailFormGroup.appendChild(invalidMessage);
         emailInput.classList.add('invalid-input');
     } else {
@@ -196,13 +196,13 @@ registerForm.addEventListener('submit', (e) => {
         const invalidMessage = document.createElement('p');
         invalidMessage.classList.add('invalid-msg');
         if (isPasswordValid === 2) {
-            invalidMessage.innerText = 'Password setidaknya 8 karakter';
+            invalidMessage.innerText = 'At least 8 characters';
         } else if (isPasswordValid === 3) {
-            invalidMessage.innerText = 'Password tidak memiliki huruf kapital';
+            invalidMessage.innerText = 'Must contain capital letters';
         } else if (isPasswordValid === 4) {
-            invalidMessage.innerText = 'Password tidak memiliki angka';
+            invalidMessage.innerText = 'Must contain numbers';
         } else if (isPasswordValid === 5) {
-            invalidMessage.innerText = 'Password tidak memiliki karakter spesial (!@#$%^&*)';
+            invalidMessage.innerText = 'Must contain special characters (!@#$%^&*)';
         }
         passwordFormGroup.appendChild(invalidMessage);
         passwordInput.classList.add('invalid-input');
